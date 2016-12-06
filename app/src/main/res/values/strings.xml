@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Intranet</string>
+    <string name="app_name">Project I</string>
     <string name="username_or_email">Username or email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>

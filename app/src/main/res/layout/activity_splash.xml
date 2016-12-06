@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="@android:dimen/app_icon_size"
-        android:textColor="@color/colorPrimary"
-        android:text="@string/app_name"/>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/logo"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="555dp"
+            android:gravity="center"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textColor="@android:color/white"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@+id/logo"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:text="A Computer Society of India - VIT Project"/>
+
+    </RelativeLayout>
+
+</ScrollView>

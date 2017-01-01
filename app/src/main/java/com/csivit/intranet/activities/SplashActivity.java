@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.csivit.intranet.R;
+import com.csivit.intranet.utils.Data;
 
 import java.util.concurrent.TimeUnit;
 
@@ -36,6 +37,12 @@ public class SplashActivity extends AppCompatActivity {
 
                     @Override
                     public void onNext(Long aLong) {
+                        for(int i = 0; i < 10; i++) {
+                            Data.Event event = new Data.Event();
+                            event.title = "UTH";
+                            event.organisedBy = "CSI VIT";
+                            Data.AllEvents.add(event);
+                        }
                         Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                         startActivity(intent);
                     }

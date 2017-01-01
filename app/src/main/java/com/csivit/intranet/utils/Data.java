@@ -3,7 +3,12 @@ package com.csivit.intranet.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Data {
+
+    public static List<Event> AllEvents = new ArrayList<>();
 
     private static SharedPreferences sharedPreferences;
     private static boolean loggedIn;
@@ -47,5 +52,11 @@ public class Data {
 
     public static void setAccessToken(String accessToken) {
         Data.accessToken = accessToken;
+    }
+
+    public static class Event {
+        public String title;
+        public String organisedBy;
+        public String date;
     }
 }

@@ -57,8 +57,10 @@
         android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sign_up"
+        android:layout_below="@id/login_button"
         android:layout_marginTop="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:padding="12dp"
         android:textColor="@color/colorPrimary"
         android:text="@string/forgot_password"/>

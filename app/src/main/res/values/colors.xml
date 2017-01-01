@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="textColorPrimary">#FFFFFFFF</color>
+    <color name="googlePlusRed">#D34836</color>
+    <color name="facebookBlue">#3B5998</color>
 </resources>
